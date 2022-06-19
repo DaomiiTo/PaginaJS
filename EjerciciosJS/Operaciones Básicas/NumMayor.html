@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Mayor</title>
+    <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+    <h1>¿Cuál es el número mayor?</h1>
+    <p>Aquí te determinaremos la posición del número mayor.</p>
+    <script type="text/javascript">
+        let numeros = []
+    while(true) {
+        let numero = parseInt(prompt("Introduzca los números para llenar el arreglo: \nPresione 0 para finalizar."));
+        if(numero == 0){
+            break
+        }
+        else if (numero >= 0) {
+            numeros.push(numero)
+        }
+        else {
+            break
+        }
+    }
+    let mayor = 0;
+    for(let i = 0; i < numeros.length; i++) {
+        if(mayor < numeros[i]) {
+            mayor = numeros[i];
+            continue; 
+        }
+        else {
+            continue;
+        }
+    }
+    document.write('<p>' + 'Este es el número mayor: ' + mayor + '</p>');
+        </script>
+    <br>
+    <a class="regreso" href="/index.html">Inicio</a>
+</body>
+</html>

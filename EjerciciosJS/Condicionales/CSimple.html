@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Simple</title>
+    <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+    <h1>Condicional Simple</h1>
+    <p>En esta sección se determinará el número mayor entre 15, 9 y 17.</p>
+    <script type="text/javascript">
+        var dato1 = 15;
+        var dato2 = 9;
+        var dato3 = 17;
+        document.write ('<p>' + 'El mayor entre ' +dato1 +',' + dato2 + ' y ' + dato3 + ' es: ');
+        if((dato1 > dato2) && (dato1 > dato3)){
+            document.write(dato1 +'</p>');
+        }
+        else if((dato2 > dato3) && (dato2 > dato1)){
+            document.write(dato2 +'</p>');
+        }
+        else if((dato3 > dato2) && (dato3 > dato1)){
+            document.write(dato3 +'</p>');
+        }
+    </script>
+    <a class="regreso" href="/index.html">Inicio</a>
+</body>
+</html>

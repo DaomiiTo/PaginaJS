@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media aritmética</title>
+    <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+    <h1>Media aritmética de los números que ingrese</h1>
+    <p>En esta página podrás saber cual es la media aritmética de los números que ingrese.</p>
+    <script type="text/javascript">
+       let numeros = [];
+    while(true) {
+        let numero = parseInt(prompt("Introduzca los numeros para obtener la media: \nPresione 0 para finalizar."));
+        if(numero == 0){
+            break
+        }
+        else if (numero >= 0) {
+            numeros.push(numero)
+        }
+        else {
+            break
+        }
+    }
+    let suma = 0;
+    let media = 0;
+    for(let i = 0; i < numeros.length; i++) {
+        suma = suma + numeros[i];
+    }
+    media = suma / numeros.length;
+    document.write('<p>' + "Su media es: " + media + '</p>');
+    </script>
+    <br>
+    <a class="regreso" href="/index.html">Volver</a>
+</body>
+</html>

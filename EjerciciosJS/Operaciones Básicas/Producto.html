@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+    <h1>Producto de dos números</h1>
+    <script>
+        let num1 = parseInt(prompt("Ingrese el primer numero"));
+        let num2 = parseInt(prompt("Ingrese el segundo numero"));
+        let producto = 0;
+        for(let i = 0; i < num1; i++) {
+            producto = producto + num2;
+        }
+        document.write('<p>' + 'El primer valor es: ' + num1 + '</p>');
+        document.write('<p>' +  'El segundo valor es: ' + num2 + '</p>');
+        document.write('<p>' +  'El producto es: ' + producto + '</p>');
+    </script>
+
+    <br>
+    <a class="regreso" href="/index.html">Inicio</a>
+</body>
+</html>

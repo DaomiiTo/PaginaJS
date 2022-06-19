@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de arreglos</title>
+    <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+    <h1>Suma de dos arreglos</h1>
+    <script>
+        let numeros1 = [];
+    let numeros2 = [];
+
+    while(true) {
+        let numero = parseInt(prompt("Introduzca los numeros para llenar el arreglo 1\nPresione 0 para parar"));
+        if(numero == 0){
+            break
+        }
+        else if (numero >= 0) {
+            numeros1.push(numero)
+        }
+        else {
+            break
+        }
+    }
+    while(true) {
+        let numero2 = parseInt(prompt("Introduzca los numeros para llenar el arreglo 2\nPresione 0 para parar"));
+        if(numero2 == 0){
+            break
+        }
+        else if (numero2 >= 0) {
+            numeros2.push(numero2)
+        }
+        else {
+            break
+        }
+    }
+    if((numeros1.length == numeros2.length) && (numeros1.length != 0)) {
+        document.write('<p>' + 'Los arreglos tienen la misma cantidad de elementos, sumando...' + '</p>');
+        let numeros3 = [];
+        for(let i = 0; i < numeros1.length; i++) {
+            numeros3[i] = numeros1[i] + numeros2[i];
+        }
+        document.write('<p>' + 'La suma de los arreglos es: ' + numeros3 + '</p>');
+    }
+    else {
+        document.write('<p>' + 'Los arreglos no cuentan con la misma cantidad de elementos, finalizando...' + '</p>');
+    }
+    </script>
+
+    <br>
+    <a class="regreso" href="/index.html">Inicio</a>
+</body>
+</html>

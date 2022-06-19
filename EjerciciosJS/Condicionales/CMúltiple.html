@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Múltiple</title>
+    <link rel="stylesheet" href="/styles1.css">
+</head>
+<body>
+    <h1 class="titulos">Condicional Múltiple</h1>
+    <p>En esta sección se le saludara al creador del programa en caso de ingresar ese nombre.</p>
+    <script type="text/javascript">
+        var dato1 = '';
+        dato1 = prompt('Ingrese el nombre del creador de esta página (David Ramírez Rosas)');
+        switch (dato1) {
+            case 'David': document.write('<p>' + 'Hola ' + dato1 + '</p>');
+                break;
+            case 'Ramírez': document.write('<p>' + 'Hola ' + dato1 + '</p>');
+                break;
+            case 'Rosas': document.write('<p>' + 'Hola ' + dato1 + '</p>');
+                break;
+            default: document.write('<p>' + 'Error, ' + dato1 + ' no es algo que conozca.' + '</p>');
+                break;
+        }
+    </script>
+
+    <h3><a class="regreso" href="/index.html">Inicio</a></h3>
+    <h3><a style="margin-left: 40%; font-size: x-large;" href="/Condicionales/CMúltiple.html">Volver a ingresar un valor</a></h3>
+</body>
+</html>

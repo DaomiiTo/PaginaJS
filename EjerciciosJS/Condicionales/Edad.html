@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles1.css">
+    <title>+18</title>
+</head>
+<body>
+    <h1>Dime tu edad y te diré si puedes votar</h1>
+    <p>En esta página podrás saber si tienes la edad para poder votar.</p>
+    <script type="text/javascript">
+        var dato1 = 17;
+        dato3=prompt('Ingrese su edad: ');
+        if((dato1 > dato3)){
+        document.write('<p>' + 'Cuentas con ' + dato3 + ' no puedes votar todavía.' + '</p>');
+        }
+        else if((dato3 > dato1)){
+        document.write('<p>' + 'Tienes ' + dato3 + ' por lo tanto, si puedes votar.' + '</p>');
+        }
+    </script>
+    <br>
+    <a class="regreso" href="/index.html">Inicio</a>
+</body>
+</html>
